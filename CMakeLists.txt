@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(DesignPatterns main.cpp)
-set(INCLUDE_DIRECTORIES $CMAKE_CURRENT_DIR/Factory.h)
+set(INCLUDE_DIRECTORIES
+    $CMAKE_CURRENT_DIR/Factory.h
+    $CMAKE_CURRENT_DIR/singleton.hpp)
 #include_directories($CMAKE_CURRENT_DIR/Factory.h)
 include_directories($INCLUDE_DIRECTORIES)
