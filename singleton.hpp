@@ -5,8 +5,9 @@
 #include <thread>
 #include <mutex>
 
-
 using namespace std;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 class Logger
 {
@@ -47,12 +48,12 @@ private:
        ctr++;
        cout << "New instance created " << ctr << endl;
     }
-
 };
 
-
+/////////////////////////////////////////////////////////////////////////////////////////
 // Static variables must be instantiated/initialized outside of class,
 // since they are not bound to any class to be initialized inside them
+////////////////////////////////////////////////////////////////////////////////////////
 Logger* Logger::loggerInstance = nullptr;
 int Logger::ctr = 0;
 mutex Logger::mtx;
